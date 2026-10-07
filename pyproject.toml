@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ordinal"
+version = "1.0.0"
+description = "A Python package for ordinal arithmetic"
+readme = "README.md"
+requires-python = ">=3.15"
+license = { text = "MIT" }
+authors = [
+    {name = "YXProtocol", email = "YXProtocol@outlook.com"}
+]
+keywords = [
+    "python",
+    "ordinal",
+    "ordinal-arithmetic",
+    "ordinal-numbers",
+    "fundamental-sequence",
+    "googology",
+    "growing-hierarchy",
+    "transfinite",
+    "immutable",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "tb_hide>=0.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
